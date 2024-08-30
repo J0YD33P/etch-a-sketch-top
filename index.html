@@ -8,8 +8,38 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Etch-a-Sketch!</h1>
+    </header>
     <div class="container">
         <div class="grid-container"></div>
+        <div class="menu">
+
+            <h2 class="menu-title">Menu</h2>
+
+            <div class="palette-container">
+                <input type="color" id="pen-color" class="palette" value="#000000" />
+                <label for="pen-color">Pen Color</label>
+            </div>
+
+           <div class="palette-container">
+                <input type="color" id="canvas-color" class="palette" value="#000000" />
+                <label for="canvas-color">Canvas Color</label>
+           </div>
+
+            <div class="button-container">
+                <button class="button normal-mode">Regular</button>
+                <button class="button rainbow-mode">Rainbow</button>
+                <button class="button rainbow-mode">Progressive Dark</button>
+                <button class="button eraser">Eraser</button>
+                <button class="button clear-canvas">Clear Canvas</button>
+                <input type="range" id="price" min="4" max="100" step="1" value="16" />
+            </div>
+            
+        </div>        
     </div>
+    <footer>
+        <p>Copyright 2024 Joydeep</p>
+    </footer>   
 </body>
 </html>

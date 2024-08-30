@@ -9,10 +9,60 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    gap: 60px;
+    flex-direction: row-reverse;
+}
+
+header h1{
+    text-align: center;
+}
+
+.menu{
+    /* display: flex; */
+    width: 200px;
+    height: 350px;
+    border-radius: 3px;
+    outline: 3px solid black;
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.menu-title{
+    margin: 5px;
+}
+
+.palette-container{
+    display: flex;
+    align-items: center;
+}
+
+.palette{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    background: transparent;
+    border: none;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.button{
+    margin: 5px;
+}
+
+#price{
+    margin-top: 30px;
 }
 
 .grid-container{
     width: 500px; 
-    height: 500px; 
-    border: 3px solid black;
+    height: 500px;
+    border-radius: 3px; 
+    outline: 3px solid black;
 }

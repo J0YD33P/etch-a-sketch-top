@@ -1,5 +1,5 @@
 const gridContainer = document.querySelector(".grid-container");
-let grid = 2;
+let grid = 16;
 let size = 500/grid;
 
 
@@ -13,9 +13,16 @@ for(let i = 0; i<grid; i++){
         const square = document.createElement("div");
         square.classList.add("square");
     
-        square.setAttribute("style", `border: 1px solid black; width: ${size}px; height: ${size}px;`);
+        square.setAttribute("style", `outline: 1px solid black; width: ${size}px; height: ${size}px;`);
         miniContainer.appendChild(square);
     }
-
 }
 
+const elements = document.querySelectorAll(".square");
+
+elements.forEach((element)=> {
+    element.addEventListener("mouseenter", () => 
+        {   element.setAttribute("style", `outline: 1px solid black; width: ${size}px; height: ${size}px; background-color: black;`);
+            console.log(element);
+        });
+});
