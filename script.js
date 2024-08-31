@@ -12,7 +12,6 @@ for(let i = 0; i<grid; i++){
     for(let j = 0; j<grid; j++){
         const square = document.createElement("div");
         square.classList.add("square");
-    
         square.setAttribute("style", `outline: 1px solid black; width: ${size}px; height: ${size}px;`);
         miniContainer.appendChild(square);
     }
@@ -21,7 +20,7 @@ for(let i = 0; i<grid; i++){
 const elements = document.querySelectorAll(".square");
 
 elements.forEach((element)=> {
-    element.addEventListener("mouseenter", () => 
+    element.addEventListener("mouseout", () => 
         {   element.setAttribute("style", `outline: 1px solid black; width: ${size}px; height: ${size}px; background-color: black;`);
             console.log(element);
         });
